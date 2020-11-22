@@ -16,8 +16,10 @@ if (userYearOfBirth > 0 && userYearOfBirth < currentYear) {
         console.log('Извини, но тебе нет 18 :( Когда исполнится - заходи в любое время, мы будем ждать');
     }
 
+} else if (userYearOfBirth === currentYear) {
+    console.log('Тебе меньше года');
 } else if (userYearOfBirth > currentYear) {
-    console.log('Ти родишся в', userYearOfBirth + ' году')
+    console.log('Ти родишся в', userYearOfBirth + ' году');
 } else if (userYearOfBirth <= 0) {
     console.log('Указан некоректный год');
 } else {
