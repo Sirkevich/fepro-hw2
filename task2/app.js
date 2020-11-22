@@ -18,7 +18,7 @@ if (userName != +userName && userName !== null) {
                 if (userExpirience >= 2) {
                     let userEnglishLevel = prompt('Прекрасно, укажите Ваш уровень английского: pre-intermediate, intermediate, upper-intermediate?');
 
-                    if (userEnglishLevel.toLocaleLowerCase() == 'intermediate' || userEnglishLevel.toLocaleLowerCase() == 'upper-intermediate') {
+                    if (userEnglishLevel.toLowerCase() == 'intermediate' || userEnglishLevel.toLowerCase() == 'upper-intermediate') {
                         let personalUserProjects = confirm('Прекрасно, у Вас есть персональные проекты?');
 
                         if (personalUserProjects == true) {
