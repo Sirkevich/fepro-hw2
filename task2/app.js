@@ -2,7 +2,7 @@ const currentYear = +2020;
 
 let userName = prompt('Добро пожаловать к нам на сайт! Введите Ваше имя');
 
-if (userName != +userName) {
+if (userName != +userName && userName !== null) {
     alert(userName + ', ' + 'рады знакомству, мы компания Lohika');
     let userYearOfBirth = +prompt('Введите год Вашего рождения');
 
@@ -16,9 +16,9 @@ if (userName != +userName) {
                 let userExpirience = +prompt('Сколько лет Вы работаете в этой сфере');
 
                 if (userExpirience >= 2) {
-                    let userEnglishLevel = prompt('Прекрасно, укажите Ваш уровень английского: pre-intermediate, intermediate, upper intermediate?');
+                    let userEnglishLevel = prompt('Прекрасно, укажите Ваш уровень английского: pre-intermediate, intermediate, upper-intermediate?');
 
-                    if (userEnglishLevel == 'intermediate' || userEnglishLevel == 'upper-intermediate') {
+                    if (userEnglishLevel.toLocaleLowerCase() == 'intermediate' || userEnglishLevel.toLocaleLowerCase() == 'upper-intermediate') {
                         let personalUserProjects = confirm('Прекрасно, у Вас есть персональные проекты?');
 
                         if (personalUserProjects == true) {
